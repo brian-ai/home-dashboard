@@ -1,0 +1,70 @@
+.menu-icon {
+  width: 30px;
+  margin: 1.5rem auto;
+  transform: rotate(0deg);
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  &.open {
+    margin: 1.5rem 0.5rem 0rem 0rem;
+    float: right;
+    &:before {
+      content: '';
+      display: inline-block;
+      z-index: 1;
+      height: 15px;
+      width: 30px;
+      position: absolute;
+      left: 0px;
+    }
+  }
+}
+
+.menu-icon span {
+  display: block;
+  position: absolute;
+  height: 2px;
+  width: 100%;
+  background: whitesmoke;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: 0.25s ease-in-out;
+  z-index: 2;
+  &:before {
+    content: '';
+    display: inline-block;
+    z-index: 1;
+    height: 15px;
+    width: 30px;
+    position: absolute;
+    left: 0px;
+  }
+}
+
+.menu-icon span:nth-child(1) {
+  top: 0;
+}
+
+.menu-icon span:nth-child(2) {
+  top: 7px;
+}
+
+.menu-icon span:nth-child(3) {
+  top: 14px;
+}
+
+.menu-icon.open span:nth-child(1) {
+  top: 0;
+  transform: rotate(135deg);
+}
+
+.menu-icon.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+.menu-icon.open span:nth-child(3) {
+  top: 0;
+  transform: rotate(-135deg);
+}

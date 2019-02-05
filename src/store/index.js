@@ -1,23 +1,22 @@
 import createContext from './createContext'
 
 const initialState = {
-    config: {
-        name: 'wwcoffee',
-        nav: [
-            {
-                text: 'Sobre nós',
-                path: '/about'
-            },
-            {
-                text: 'Sugira cafeterias',
-                path: '/suggest'
-            },
-        ],
-        activeItem: undefined,
-    },
+  config: {
+    name: 'wwcoffee',
+    nav: [
+      {
+        value: 'providers',
+        text: 'Providers',
+        path: '/providers'
+      },
+      {
+        value: 'settings',
+        text: 'Settings',
+        path: '/settings'
+      }
+    ],
+    activeItem: undefined
+  }
 }
 
-export {
-    createContext,
-    initialState
-}
+export { createContext, initialState }
