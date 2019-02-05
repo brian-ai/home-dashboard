@@ -1,23 +1,23 @@
 import React, { useState } from 'react'
 // UI Elements
-import { Logo, Loader } from 'components/atoms'
+import { Logo } from 'components/atoms'
 import { Page } from 'components/layout'
 // Styles
 import './styles.scss'
 
-const Home = ({
+const Providers = ({
   baseContext: {
     config: { nav }
   }
 }) => {
-  const [isOpen, handleMenuIsOpen] = useState(false)
+  const [isOpen = false, handleMenuIsOpen] = useState(false)
 
   return (
     <Page nav={nav} handleMenuToggle={handleMenuIsOpen} isMenuOpened={isOpen}>
       <Logo />
-      <Loader />
+      <span>Providers</span>
     </Page>
   )
 }
 
-export default Home
+export default Providers

@@ -10,7 +10,7 @@ const Home = ({
     config: { nav }
   }
 }) => {
-  const [isOpen, handleMenuIsOpen] = useState(false)
+  const [isOpen = false, handleMenuIsOpen] = useState(false)
 
   return (
     <Page nav={nav} handleMenuToggle={handleMenuIsOpen} isMenuOpened={isOpen}>
