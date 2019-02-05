@@ -1,6 +1,3 @@
-/* eslint-disable import/first, import/imports-first  */
-process.hrtime = require('browser-process-hrtime')
-
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter } from 'react-router-dom'
@@ -12,8 +9,7 @@ import { serviceWorker } from 'services'
 // Store
 import { createContext } from 'store'
 // Styles
-import 'semantic-ui-css/semantic.min.css'
-import './index.css'
+import './index.scss'
 
 const baseContext = createContext()
 

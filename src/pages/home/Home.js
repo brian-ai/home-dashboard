@@ -1,8 +1,13 @@
 import React from 'react'
+// UI Elements
+import { Logo, Loader } from 'components/atoms'
+// Styles
+import './styles.scss'
 
-const Home = ({ baseContext: { config } }) => (
+const Home = () => (
   <div className="brian-hub">
-    <span className="brian-title">Jesus</span>
+    <Logo />
+    <Loader />
   </div>
 )
 

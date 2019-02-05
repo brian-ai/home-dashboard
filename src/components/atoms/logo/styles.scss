@@ -1,0 +1,28 @@
+@import './assets/brian-font.scss';
+@import '../../../assets/colors.scss';
+@import './themes/blue';
+
+.icon-wrapper {
+  &.regular {
+    font-size: 10rem;
+    padding: 2rem;
+  }
+
+  &.small {
+    font-size: 5rem;
+    padding: 0.5rem;
+  }
+
+  &.big {
+    font-size: 20rem;
+    padding: 4rem;
+  }
+
+  &.small {
+    font-size: 5rem;
+  }
+
+  &.big {
+    font-size: 20rem;
+  }
+}
