@@ -1,0 +1,33 @@
+.player-status {
+  position: relative;
+  width: 25rem;
+  height: 15rem;
+  border-radius: 0.6rem;
+  &.bg {
+    background-size: cover;
+    box-shadow: 0.15rem 0.1rem 0.4rem rgba(0, 0, 0, 0.6);
+  }
+
+  &.bg--overlay {
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+
+  .song--info {
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    display: flex;
+    flex-direction: column;
+    .song--title {
+      color: whitesmoke;
+      padding-bottom: 0.5rem;
+    }
+
+    .song--artist {
+      color: lightgray;
+      align-self: flex-end;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+}

@@ -5,6 +5,11 @@ const initialState = {
     name: 'wwcoffee',
     nav: [
       {
+        value: 'hub',
+        text: 'Hub',
+        path: '/'
+      },
+      {
         value: 'providers',
         text: 'Providers',
         path: '/providers'
