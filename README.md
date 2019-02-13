@@ -1,6 +1,6 @@
 # Brian - Frontend
 
-Your help assistant now has a central hub.
+Your personal assistant now has an interface xD
 
 ## Requirements
 - Node 10+
